@@ -1,0 +1,21 @@
+function catAndMouse(x, y, z) {
+
+    var diff = Math.abs(x-z);
+    var diff1 = Math.abs(y-z);
+
+    if(diff<diff1)
+    {
+        return "Cat A";
+    }
+    if(diff1<diff)
+    {
+        return "Cat B";
+    }
+
+    if(diff1==diff)
+    {
+        return "Mouse C";
+    }
+
+
+}
