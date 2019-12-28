@@ -1,0 +1,21 @@
+function hackerrankInString(s) {
+        let str = "hackerrank";
+    if (s.length < str.length) {
+        return "NO";
+    }
+    let j = 0;
+    for (let i = 0; i < s.length; i++) {
+        if (j < str.length && s.charAt(i) == str.charAt(j)) {
+                j++;
+        }
+    }
+    if(j == str.length)
+    {
+        return "YES";
+    }
+    else
+    {
+        return "NO";
+    }
+
+}
