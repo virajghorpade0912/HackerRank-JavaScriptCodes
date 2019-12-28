@@ -1,0 +1,31 @@
+function miniMaxSum(arr) {
+
+    var temp=0;
+    for(var i=0;i<arr.length;i++)
+    {
+        for(var j=0;j<arr.length-1-i;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                temp =arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+
+    var sum=0;
+    var sum1=0;
+    for(var i=1;i<arr.length;i++)
+    {
+        sum = sum + arr[i];
+    }
+
+    for(var i=0;i<arr.length-1;i++)
+    {
+        sum1 = sum1 + arr[i];
+    }
+
+    console.log(sum1+" "+sum);
+
+}
