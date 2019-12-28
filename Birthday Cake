@@ -1,0 +1,25 @@
+function birthdayCakeCandles(ar) {
+
+    var max=0;
+    for(var i=0;i<ar.length;i++)
+    {
+        if(ar[i]>max)
+        {
+            max =ar[i];
+        }
+    }
+
+    var cnt=0;
+
+    for(var i=0;i<ar.length;i++)
+    {
+        if(ar[i]==max)
+        {
+            cnt++;
+        }
+    }
+
+    return cnt;
+
+}
+
