@@ -1,0 +1,23 @@
+function countingValleys(n, s) {
+
+    
+    let ele = 0;
+    let vall = 0;
+    for (const c of s) {
+        if (c == 'U'){
+            ele++;
+        }
+        else if (c =='D') {
+            if (ele == 0){
+                vall++;
+            }
+            ele--;
+        }
+    }
+    return vall;
+
+
+    
+
+
+}
