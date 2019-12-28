@@ -1,0 +1,23 @@
+function angryProfessor(k, a) {
+
+    var cnt=0;
+
+        for(var i=0;i<a.length;i++)
+        {
+            if(a[i]<=0)
+            {
+                cnt++;
+            }
+        }
+
+
+        if(cnt<k)
+        {
+            return "YES";
+        }
+
+        else
+        {
+            return "NO";
+        }
+}
