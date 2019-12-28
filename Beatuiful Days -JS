@@ -1,0 +1,23 @@
+function beautifulDays(i, j, k) {
+
+    var count=0;
+   
+   for(var a=i;a<=j;a++)
+   {
+       var x=a;
+       var c =parseInt(a).toString().split("").reverse().join("");
+
+       let diff = Math.abs(x-c);
+
+       if (diff%k==0)
+       {
+           count++;
+       }
+       
+   }
+
+   return count;
+
+
+
+}
