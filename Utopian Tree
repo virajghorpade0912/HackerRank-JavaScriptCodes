@@ -1,0 +1,13 @@
+function utopianTree(n) {
+
+    var length = 0;
+        for(var i = 0; i <= n;i++){
+            if(i%2 != 0){
+            length = length * 2;
+        } else {
+            length++;
+        }
+    }
+    return length;
+
+}
