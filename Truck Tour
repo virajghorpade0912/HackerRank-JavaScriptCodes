@@ -1,0 +1,30 @@
+bool
+check_path(station_t *s,int start,int n) {
+    int fuel = 0;
+    int i = start;
+  
+    while (i < n) {
+     
+        fuel += s[i].petrol;
+        fuel -= s[i].dist;
+
+    
+
+        if (fuel < 0) {
+          
+            return false;
+        }
+        i++;
+        if (start > 0) {
+            if (i == start) {
+            
+                return true;
+            } else if (i == n) {
+                i = 0;
+            }
+        }
+    }
+  
+    return true;
+}
+
