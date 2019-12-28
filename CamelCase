@@ -1,0 +1,10 @@
+function camelcase(s) {
+    let cnt=1;
+    for(let v of s){
+        let cc=v.charCodeAt();
+        //console.log(cc);
+        if(cc>='A'.charCodeAt()&&cc<='Z'.charCodeAt())
+            cnt++;
+    }
+    return cnt;  // one extra beacuse first word is not counted 
+}
