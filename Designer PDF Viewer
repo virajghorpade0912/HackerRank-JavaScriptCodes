@@ -1,0 +1,17 @@
+function designerPdfViewer(h, word) {
+
+        let arr=[];
+
+        for(var i of word)
+        {
+            let s = i.charCodeAt(0) -97;
+            arr.push(h[s]);
+        }
+
+        let b = Math.max(...arr);
+
+        let c = b*word.length;
+
+        return c;
+
+}
