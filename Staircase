@@ -1,0 +1,22 @@
+function staircase(n) {
+
+    var combine='';
+    for(var i=0;i<n;i++)
+    {
+        combine='';
+        for(var j=n-1;j>i;j--)
+        {
+            combine+=' ';
+        }
+
+        for(var k=0;k<=i;k++)
+        {
+            combine+='#';
+        }
+        console.log(combine);
+
+
+    }
+
+
+}
