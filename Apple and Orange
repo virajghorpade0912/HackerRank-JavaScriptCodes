@@ -1,0 +1,40 @@
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+
+    var c = 0;
+    var count =0;
+    var count1=0;
+    var d =0;
+    for(var i=0;i<apples.length;i++)
+    {
+        c = a + apples[i];
+
+        if(c>=s && c<=t)
+        {
+            count++;
+        }
+    }
+    
+    for(var i=0;i<oranges.length;i++)
+    {
+        d = b + oranges[i];
+
+        if(d>=s && d<=t)
+        {
+            count1++;
+        }
+    }
+
+    
+
+    
+
+    console.log(count);
+    console.log(count1);
+
+
+
+
+
+
+}
+
